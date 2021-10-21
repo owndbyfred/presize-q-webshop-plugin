@@ -48,12 +48,25 @@
     transition: all 0.2s ease-in-out; }
     .Card__Close:hover {
       cursor: pointer;
-      color: #666;
-      background-color: #ddd;
-      border-color: #666; }
+      color: #383838;
+      background-color: #e6e6e6;
+      border-color: #383838; }
   .Card__Title {
     font-size: 48px;
     font-weight: 900;
     color: #02adad; }
   .Card__Subheading {
     font-size: 20px; }
+
+.PresizeQ__Button {
+  color: white;
+  background-color: #02adad;
+  font-family: "Roboto", sans-serif;
+  padding: 16px 32px;
+  width: max-content;
+  margin: 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out; }
+  .PresizeQ__Button:hover {
+    background-color: #02bcbc;
+    cursor: pointer; }
