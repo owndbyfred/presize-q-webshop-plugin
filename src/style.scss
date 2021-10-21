@@ -6,6 +6,10 @@
   display: none;
 }
 
+.-NoScroll {
+  overflow: hidden;
+}
+
 .PresizeQ {
   font-family: $font-family-primary;
   z-index: 99;

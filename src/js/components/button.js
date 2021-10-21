@@ -1,4 +1,9 @@
-const { addBodyDiv, waitForElement, addListener } = require("../util");
+const {
+  addBodyDiv,
+  waitForElement,
+  addListener,
+  addStyles,
+} = require("../util");
 
 const appendButton = () => {
   const htmlString = `
@@ -19,6 +24,7 @@ const buttonClickHandler = (e) => {
   let isHidden = popUp.classList.contains("-Hidden");
 
   if (isHidden) {
+    document.body.classList.add("-NoScroll");
     popUp.classList.remove("-Hidden");
   }
 };

@@ -1,4 +1,4 @@
-const cssString = `
+let cssString = `
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 body {
   margin: 0;
@@ -40,6 +40,9 @@ body {
     font-size: 20px; }
 
 `;
+
+//REMOVE FOR PRODUCTION
+cssString = "";
 
 module.exports = {
   cssString,

@@ -2,6 +2,9 @@
 .-Hidden {
   display: none; }
 
+.-NoScroll {
+  overflow: hidden; }
+
 .PresizeQ {
   font-family: "Roboto", sans-serif;
   z-index: 99;
