@@ -89,7 +89,7 @@ let cssString = `
 `;
 
 //REMOVE FOR PRODUCTION
-//cssString = "";
+cssString = "";
 
 module.exports = {
   cssString,

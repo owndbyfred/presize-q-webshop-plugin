@@ -13,9 +13,15 @@ const appendPopup = () => {
                 </div>
                 <div class="Card__Title">Presize-Q</div>
                 <div class="Card__Subheading">Jetzt neue Klamotten entdecken!</div>
+                <div class="ImageSection">
+                    <div class="DummyImage"></div>
+                </div>
+                <div class="ReactionSection">
+                    <div class="Reaction__No"></div>
+                    <div class="Reaction__Yes"></div>
+                </div>
                 <div class="BuyNow">
                     <a href="#" class="BuyNow__Button">Buy Now</a>
-                    <img src="https://link.com/zum/bild.png" alt="" />
                 </div>
             </div>
         </div>

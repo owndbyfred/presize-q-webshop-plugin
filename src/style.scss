@@ -27,7 +27,7 @@
   height: 100vh;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 
   &__Wrapper {
@@ -40,8 +40,8 @@
 
 .Card {
   padding: 16px;
-  width: 800px;
-  height: 700px;
+  width: 85%;
+  height: 85%;
   background-color: #fff;
   border-radius: 8px;
   display: flex;
@@ -49,11 +49,11 @@
   align-items: center;
   color: $text-color;
   position: relative;
+  margin-bottom: 5%;
 
   &__Close {
     position: absolute;
-    top: -20px;
-    right: -30px;
+    top: -5%;
     background-color: #fff;
     color: $text-color;
     border: $text-color solid 2px;
@@ -112,4 +112,15 @@
     background-color: lighten($primary-color, 3);
     cursor: pointer;
   }
+}
+
+.ImageSection {
+  width: 100%;
+  height: 60%;
+}
+
+.DummyImage {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
 }
