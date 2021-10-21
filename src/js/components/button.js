@@ -7,7 +7,7 @@ const appendButton = () => {
     </div>
   `;
   const className = "PresizeQ__ButtonWrapper";
-  addBodyDiv(htmlString, className);
+  addBodyDiv(htmlString, className, true);
   addListener(`.${className}`, buttonClickHandler);
 };
 

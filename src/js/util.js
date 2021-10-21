@@ -35,7 +35,7 @@ const appendElement = (element, targetElement, position) => {
  * @param {*} htmlString -
  * @param {*} className -
  */
-const addBodyDiv = (htmlString, className = null) => {
+const addBodyDiv = (htmlString, className = null, isFirstChild = false) => {
   const selector = "body";
   waitForElement(selector, (target) => {
     const div = document.createElement("div");
@@ -46,7 +46,11 @@ const addBodyDiv = (htmlString, className = null) => {
 
     div.innerHTML = htmlString;
 
-    target.appendChild(div);
+    if (isFirstChild) {
+      target.insertBefore(div, target.firstChild);
+    } else {
+      target.appendChild(div);
+    }
   });
 };
 
