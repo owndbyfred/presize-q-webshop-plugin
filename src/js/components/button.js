@@ -13,10 +13,10 @@ const appendButton = () => {
   `;
   const className = "PresizeQ__ButtonWrapper";
   addBodyDiv(htmlString, className, true);
-  addListener(`.${className}`, buttonClickHandler);
+  addListener(`.${className}`, popupClickHandler);
 };
 
-const buttonClickHandler = (e) => {
+const popupClickHandler = (e) => {
   e.preventDefault();
   const popUpClass = "PresizeQ__Wrapper";
   const popUp = document.querySelector(`.${popUpClass}`);
@@ -26,9 +26,13 @@ const buttonClickHandler = (e) => {
   if (isHidden) {
     document.body.classList.add("-NoScroll");
     popUp.classList.remove("-Hidden");
+  } else {
+    document.body.classList.remove("-NoScroll");
+    popUp.classList.add("-Hidden");
   }
 };
 
 module.exports = {
   appendButton,
+  popupClickHandler,
 };

@@ -31,7 +31,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #333; }
+  color: #333;
+  position: relative; }
+  .Card__Close {
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    background-color: #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 25px;
+    height: 25px; }
+    .Card__Close:hover {
+      cursor: pointer; }
   .Card__Title {
     font-size: 48px;
     font-weight: 900;
