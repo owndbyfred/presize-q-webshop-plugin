@@ -49,12 +49,13 @@ let cssString = `
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     transition: all 0.2s ease-in-out;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-size: 12px; }
     .Card__Close:hover {
       cursor: pointer;
       color: #383838;
@@ -85,7 +86,6 @@ let cssString = `
   .PresizeQ__Button:hover {
     background-color: #02bcbc;
     cursor: pointer; }
-
 `;
 
 //REMOVE FOR PRODUCTION

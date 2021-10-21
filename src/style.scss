@@ -52,20 +52,21 @@
 
   &__Close {
     position: absolute;
-    top: -25px;
-    right: -35px;
+    top: -20px;
+    right: -30px;
     background-color: #fff;
     color: $text-color;
     border: $text-color solid 2px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     transition: all 0.2s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 
     &:hover {
       cursor: pointer;
