@@ -32,6 +32,26 @@ const appendElement = (element, targetElement, position) => {
 
 /**
  *
+ * @param {*} htmlString -
+ * @param {*} className -
+ */
+const addBodyDiv = (htmlString, className = null) => {
+  const selector = "body";
+  waitForElement(selector, (target) => {
+    const div = document.createElement("div");
+
+    if (className) {
+      div.classList.add(className);
+    }
+
+    div.innerHTML = htmlString;
+
+    target.appendChild(div);
+  });
+};
+
+/**
+ *
  * @param {String} cssString -
  */
 const addStyles = (cssString) => {
@@ -41,6 +61,21 @@ const addStyles = (cssString) => {
   document.head.appendChild(styleElement);
 };
 
+/**
+ *
+ * @param {*} selector -
+ * @param {*} handler -
+ * @param {*} type -
+ */
+const addListener = (selector, handler, type = "click") => {
+  waitForElement(selector, (target) => {
+    target.addEventListener(type, (e) => handler(e));
+  });
+};
+
 module.exports = {
   addStyles,
+  addBodyDiv,
+  waitForElement,
+  addListener,
 };

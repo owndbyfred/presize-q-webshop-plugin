@@ -1,9 +1,13 @@
+const cssString = `
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif; }
+
 .-Hidden {
   display: none; }
 
 .PresizeQ {
-  font-family: "Roboto", sans-serif;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.4);
   margin: 0;
@@ -34,3 +38,9 @@
     color: #02adad; }
   .Card__Subheading {
     font-size: 20px; }
+
+`;
+
+module.exports = {
+  cssString,
+};

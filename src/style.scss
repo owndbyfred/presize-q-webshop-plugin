@@ -2,17 +2,19 @@
 
 @import "styles/vars";
 
-body {
-  margin: 0;
-  font-family: $font-family-primary;
+.-Hidden {
+  display: none;
 }
 
 .PresizeQ {
+  font-family: $font-family-primary;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.4);
   margin: 0;
   padding: 0;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
