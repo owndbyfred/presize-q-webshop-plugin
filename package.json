@@ -1,0 +1,24 @@
+{
+  "name": "presize-q-webshop-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass src/style.scss -o dist",
+    "watch": "npm run css && node-sass src/style.scss -wo dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owndbyfred/presize-q-webshop-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owndbyfred/presize-q-webshop-plugin/issues"
+  },
+  "homepage": "https://github.com/owndbyfred/presize-q-webshop-plugin#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
