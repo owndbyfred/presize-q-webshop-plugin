@@ -8,7 +8,7 @@ const {
 const appendButton = () => {
   const htmlString = `
     <div class="PresizeQ__Button">
-      Try on!
+      <span class="material-icons">checkroom</span> Try on
     </div>
   `;
   const className = "PresizeQ__ButtonWrapper";

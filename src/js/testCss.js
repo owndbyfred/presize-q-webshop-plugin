@@ -22,6 +22,11 @@ let cssString = `
   display: flex;
   align-items: center;
   justify-content: center; }
+  .PresizeQ__Wrapper {
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .Card {
   padding: 16px;
@@ -46,7 +51,10 @@ let cssString = `
     -webkit-border-radius: 50%;
     width: 25px;
     height: 25px;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .Card__Close:hover {
       cursor: pointer;
       color: #383838;
@@ -68,11 +76,15 @@ let cssString = `
   width: max-content;
   margin: 8px;
   border-radius: 4px;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .PresizeQ__Button > * {
+    margin-right: 4px; }
   .PresizeQ__Button:hover {
     background-color: #02bcbc;
     cursor: pointer; }
-
 
 `;
 
