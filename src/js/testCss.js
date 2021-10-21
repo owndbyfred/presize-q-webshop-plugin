@@ -1,13 +1,14 @@
 let cssString = `
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif; }
-
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 .-Hidden {
   display: none; }
 
+.-NoScroll {
+  overflow: hidden; }
+
 .PresizeQ {
+  font-family: "Roboto", sans-serif;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.4);
   margin: 0;
@@ -31,7 +32,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #333; }
+  color: #333;
+  position: relative; }
+  .Card__Close {
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    background-color: #fff;
+    color: #333;
+    border: #333 solid 2px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s ease-in-out; }
+    .Card__Close:hover {
+      cursor: pointer;
+      color: #383838;
+      background-color: #e6e6e6;
+      border-color: #383838; }
   .Card__Title {
     font-size: 48px;
     font-weight: 900;
@@ -39,10 +59,25 @@ body {
   .Card__Subheading {
     font-size: 20px; }
 
+.PresizeQ__Button {
+  color: white;
+  background-color: #02adad;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 16px 32px;
+  width: max-content;
+  margin: 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out; }
+  .PresizeQ__Button:hover {
+    background-color: #02bcbc;
+    cursor: pointer; }
+
+
 `;
 
 //REMOVE FOR PRODUCTION
-cssString = "";
+//cssString = "";
 
 module.exports = {
   cssString,
