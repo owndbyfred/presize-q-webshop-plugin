@@ -2,7 +2,7 @@ let cssString = `
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 .-Hidden {
-  display: none; }
+  display: none !important; }
 
 .-NoScroll {
   overflow: hidden; }
@@ -65,9 +65,11 @@ let cssString = `
   .Card__Title {
     font-size: 48px;
     font-weight: 900;
-    color: #3d52b9; }
+    color: #3d52b9;
+    margin-top: 10px; }
   .Card__Subheading {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 20px; }
 
 .PresizeQ__Button {
   color: white;
@@ -155,10 +157,37 @@ let cssString = `
   align-items: center;
   justify-content: center; }
 
+.StartPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .StartPage > a {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 16px 0;
+    font-weight: 700;
+    border: #3d52b9 solid 3px; }
+  .StartPage .StartButton {
+    background-color: #3d52b9;
+    color: white; }
+  .StartPage .CustomizeButton {
+    color: #3d52b9; }
+
+.MainPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 `;
 
 //REMOVE FOR PRODUCTION
-cssString = "";
+//cssString = "";
 
 module.exports = {
   cssString,

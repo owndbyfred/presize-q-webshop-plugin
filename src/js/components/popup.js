@@ -54,6 +54,7 @@ const appendPopup = () => {
     `;
   addBodyDiv(htmlString, "PresizeQ__PopUp");
   addListener(".Card__Close", popupClickHandler);
+  addListener(".Card__Close", returnToStartHandler);
   addListener(".Reaction__Yes", imageButtonHandler);
   addListener(".Reaction__No", imageButtonHandler);
   addListener(".StartButton", startHandler);
@@ -62,6 +63,11 @@ const appendPopup = () => {
 const startHandler = (e) => {
   document.querySelector(".StartPage").classList.add("-Hidden");
   document.querySelector(".MainPage").classList.remove("-Hidden");
+};
+
+const returnToStartHandler = (e) => {
+  document.querySelector(".StartPage").classList.remove("-Hidden");
+  document.querySelector(".MainPage").classList.add("-Hidden");
 };
 
 module.exports = {
