@@ -142,3 +142,8 @@
   margin: 10px 0; }
   .CollectionDropdown:focus {
     outline: 0; }
+
+.Settings {
+  align-self: flex-start; }
+  .Settings .material-icons {
+    font-size: 30px; }

@@ -11,6 +11,7 @@ const appendPopup = () => {
                         close
                     </span>
                 </div>
+                <div class="Settings"><span class="material-icons">settings</span></div>
                 <div class="Card__Title">Presize-Q</div>
                 <select class="CollectionDropdown">
                     <option>
