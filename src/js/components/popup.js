@@ -14,31 +14,39 @@ const appendPopup = () => {
                         close
                     </span>
                 </div>
-                <div class="Settings"><span class="material-icons">settings</span></div>
-                <select class="CollectionDropdown">
-                    <option>
-                        Summer Collection 
-                    </option>
-                    <option>
-                        Nightlife Collection 
-                    </option>
-                </select>
-                <div class="ImageSection" data-current="0">
-                    ${imagesHtml}
+                <div class="StartPage">
+                    <div class="Card__Title">Presize-Q</div>
+                    <div class="Card__Subheading">Try on our new collection!</div>
+                    <a class="CustomizeButton">Upload scan</a>
+                    <a class="StartButton">Start</a>
                 </div>
-                <div class="ReactionSection">
-                    <div class="Reaction__No">
-                        <span class="material-icons -LargeIcon">not_interested</span>
+                <div class="MainPage -Hidden">
+                    <div class="Settings"><span class="material-icons">settings</span></div>
+                    <select class="CollectionDropdown">
+                        <option>
+                            Summer Collection 
+                        </option>
+                        <option>
+                            Nightlife Collection 
+                        </option>
+                    </select>
+                    <div class="ImageSection" data-current="0">
+                        ${imagesHtml}
                     </div>
-                    <div class="Reaction__Yes">
-                        <span class="material-icons -LargeIcon">favorite_border</span>
+                    <div class="ReactionSection">
+                        <div class="Reaction__No">
+                            <span class="material-icons -LargeIcon">not_interested</span>
+                        </div>
+                        <div class="Reaction__Yes">
+                            <span class="material-icons -LargeIcon">favorite_border</span>
+                        </div>
                     </div>
-                </div>
-                <div class="BuyNow">
-                    <a href="#" class="BuyNow__Button">
-                        <span class="material-icons">shopping_cart</span>
-                        Buy Now
-                    </a>
+                    <div class="BuyNow">
+                        <a href="#" class="BuyNow__Button">
+                            <span class="material-icons">shopping_cart</span>
+                            Buy Now
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
