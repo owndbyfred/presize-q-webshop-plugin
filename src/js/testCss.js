@@ -39,7 +39,8 @@ let cssString = `
   align-items: center;
   color: #333;
   position: relative;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  margin-top: 12%; }
   .Card__Close {
     position: absolute;
     top: -5%;
@@ -90,7 +91,7 @@ let cssString = `
 
 .DummyImage {
   width: 100%;
-  height: 100%;
+  height: 40vh;
   background-color: gray; }
 
 .ReactionSection {
@@ -132,10 +133,32 @@ let cssString = `
     border-radius: 4px; }
     .BuyNow__Button .material-icons {
       margin-right: 10px; }
+
+.CollectionDropdown {
+  font-size: 18px;
+  border-radius: 4px;
+  border: #666 solid 2px;
+  padding: 4px 0;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0; }
+  .CollectionDropdown:focus {
+    outline: 0; }
+
+.Settings {
+  align-self: flex-start; }
+  .Settings .material-icons {
+    font-size: 30px; }
+
+.ImageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 `;
 
 //REMOVE FOR PRODUCTION
-cssString = "";
+//cssString = "";
 
 module.exports = {
   cssString,

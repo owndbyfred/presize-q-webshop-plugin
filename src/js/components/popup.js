@@ -1,7 +1,10 @@
 const { addBodyDiv, addListener } = require("../util");
 const { popupClickHandler } = require("./button");
+const { imageList, imagesHtml, imageButtonHandler } = require("./images");
 
 const appendPopup = () => {
+  //let imagesHtml = `<img src="${imageList[0]}" class="SwipeImage"/>`;
+
   const htmlString = `
     <div class="PresizeQ__Wrapper -Hidden">
         <div class="PresizeQ"> 
@@ -12,7 +15,6 @@ const appendPopup = () => {
                     </span>
                 </div>
                 <div class="Settings"><span class="material-icons">settings</span></div>
-                <div class="Card__Title">Presize-Q</div>
                 <select class="CollectionDropdown">
                     <option>
                         Summer Collection 
@@ -21,8 +23,8 @@ const appendPopup = () => {
                         Nightlife Collection 
                     </option>
                 </select>
-                <div class="ImageSection">
-                    <div class="DummyImage"></div>
+                <div class="ImageSection" data-current="0">
+                    ${imagesHtml}
                 </div>
                 <div class="ReactionSection">
                     <div class="Reaction__No">
@@ -44,6 +46,8 @@ const appendPopup = () => {
     `;
   addBodyDiv(htmlString, "PresizeQ__PopUp");
   addListener(".Card__Close", popupClickHandler);
+  addListener(".Reaction__Yes", imageButtonHandler);
+  addListener(".Reaction__No", imageButtonHandler);
 };
 
 module.exports = {

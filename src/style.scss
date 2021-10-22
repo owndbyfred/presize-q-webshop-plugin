@@ -50,6 +50,7 @@
   color: $text-color;
   position: relative;
   margin-bottom: 5%;
+  margin-top: 12%;
 
   &__Close {
     position: absolute;
@@ -195,4 +196,10 @@
   .material-icons {
     font-size: 30px;
   }
+}
+
+.ImageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

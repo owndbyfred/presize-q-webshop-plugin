@@ -38,7 +38,8 @@
   align-items: center;
   color: #333;
   position: relative;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  margin-top: 12%; }
   .Card__Close {
     position: absolute;
     top: -5%;
@@ -147,3 +148,8 @@
   align-self: flex-start; }
   .Settings .material-icons {
     font-size: 30px; }
+
+.ImageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
