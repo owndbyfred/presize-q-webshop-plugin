@@ -56,6 +56,12 @@ const appendPopup = () => {
   addListener(".Card__Close", popupClickHandler);
   addListener(".Reaction__Yes", imageButtonHandler);
   addListener(".Reaction__No", imageButtonHandler);
+  addListener(".StartButton", startHandler);
+};
+
+const startHandler = (e) => {
+  document.querySelector(".StartPage").classList.add("-Hidden");
+  document.querySelector(".MainPage").classList.remove("-Hidden");
 };
 
 module.exports = {

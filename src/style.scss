@@ -7,7 +7,7 @@
 @import "styles/vars";
 
 .-Hidden {
-  display: none;
+  display: none !important;
 }
 
 .-NoScroll {
@@ -231,4 +231,11 @@
   .CustomizeButton {
     color: $primary-color;
   }
+}
+
+.MainPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

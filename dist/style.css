@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 .-Hidden {
-  display: none; }
+  display: none !important; }
 
 .-NoScroll {
   overflow: hidden; }
@@ -176,3 +176,9 @@
     color: white; }
   .StartPage .CustomizeButton {
     color: #3d52b9; }
+
+.MainPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
