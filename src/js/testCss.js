@@ -30,19 +30,19 @@ let cssString = `
 
 .Card {
   padding: 16px;
-  width: 800px;
-  height: 700px;
+  width: 85%;
+  height: max-content;
   background-color: #fff;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #333;
-  position: relative; }
+  position: relative;
+  margin-bottom: 5%; }
   .Card__Close {
     position: absolute;
-    top: -20px;
-    right: -30px;
+    top: -5%;
     background-color: #fff;
     color: #333;
     border: #333 solid 2px;
@@ -64,19 +64,16 @@ let cssString = `
   .Card__Title {
     font-size: 48px;
     font-weight: 900;
-    color: #02adad; }
+    color: #3d52b9; }
   .Card__Subheading {
     font-size: 20px; }
 
 .PresizeQ__Button {
   color: white;
-  background-color: #02adad;
+  background-color: #3d52b9;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  padding: 16px 32px;
-  width: max-content;
-  margin: 8px;
-  border-radius: 4px;
+  font-size: 16px;
+  padding: 20px;
   transition: all 0.2s ease-in-out;
   display: flex;
   align-items: center;
@@ -84,8 +81,57 @@ let cssString = `
   .PresizeQ__Button > * {
     margin-right: 4px; }
   .PresizeQ__Button:hover {
-    background-color: #02bcbc;
+    background-color: #4459c1;
     cursor: pointer; }
+
+.ImageSection {
+  width: 100%;
+  height: 60%; }
+
+.DummyImage {
+  width: 100%;
+  height: 100%;
+  background-color: gray; }
+
+.ReactionSection {
+  display: flex;
+  margin: 10px 0; }
+  .ReactionSection > * {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid #333 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    padding: 12px; }
+  .ReactionSection .Reaction__No {
+    color: #fff;
+    background-color: #e04b59; }
+  .ReactionSection .Reaction__Yes {
+    color: #fff;
+    background-color: #2dbc4e; }
+
+.-LargeIcon {
+  font-size: 40px; }
+
+.BuyNow {
+  margin-top: auto;
+  width: 100%; }
+  .BuyNow__Button {
+    text-decoration: none;
+    color: white;
+    background-color: #3d52b9;
+    padding: 20px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 4px; }
+    .BuyNow__Button .material-icons {
+      margin-right: 10px; }
 `;
 
 //REMOVE FOR PRODUCTION

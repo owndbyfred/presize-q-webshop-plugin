@@ -12,16 +12,30 @@ const appendPopup = () => {
                     </span>
                 </div>
                 <div class="Card__Title">Presize-Q</div>
-                <div class="Card__Subheading">Jetzt neue Klamotten entdecken!</div>
+                <select class="CollectionDropdown">
+                    <option>
+                        Summer Collection 
+                    </option>
+                    <option>
+                        Nightlife Collection 
+                    </option>
+                </select>
                 <div class="ImageSection">
                     <div class="DummyImage"></div>
                 </div>
                 <div class="ReactionSection">
-                    <div class="Reaction__No"></div>
-                    <div class="Reaction__Yes"></div>
+                    <div class="Reaction__No">
+                        <span class="material-icons -LargeIcon">not_interested</span>
+                    </div>
+                    <div class="Reaction__Yes">
+                        <span class="material-icons -LargeIcon">favorite_border</span>
+                    </div>
                 </div>
                 <div class="BuyNow">
-                    <a href="#" class="BuyNow__Button">Buy Now</a>
+                    <a href="#" class="BuyNow__Button">
+                        <span class="material-icons">shopping_cart</span>
+                        Buy Now
+                    </a>
                 </div>
             </div>
         </div>
